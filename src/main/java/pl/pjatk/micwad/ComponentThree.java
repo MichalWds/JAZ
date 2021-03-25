@@ -3,7 +3,7 @@ package pl.pjatk.micwad;
 import org.springframework.context.ApplicationContext;
 import org.springframework.stereotype.Component;
 
-@Component
+//@Component
 public class ComponentThree {
 
 //    public ComponentThree(ApplicationContext applicationContext) {
@@ -29,4 +29,8 @@ public class ComponentThree {
         System.out.println(mySimpleClass.getName());
         System.out.println(mySecondSimpleClass.getName());
     }
+
+//    public ComponentThree() {
+//        System.out.println("component three");
+//    }
 }

@@ -2,7 +2,7 @@ package pl.pjatk.micwad;
 
 import org.springframework.stereotype.Component;
 
-@Component
+//@Component
 public class ComponentTwo {
 
     public ComponentTwo() {

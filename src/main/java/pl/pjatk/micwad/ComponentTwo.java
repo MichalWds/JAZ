@@ -1,12 +1,15 @@
 package pl.pjatk.micwad;
 
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
-//@Component
+@Component
 public class ComponentTwo {
 
-    public ComponentTwo() {
-        System.out.println("component Two");
+    public ComponentTwo(@Value("${my.custom.property}") String valueFromProperties,
+                        @Value("${my.custom.random:myDefaultValue}") String randomValue) {
+        System.out.println(valueFromProperties);
+        System.out.println(randomValue);
     }
 
     void helloFromMethod() {

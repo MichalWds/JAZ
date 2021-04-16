@@ -5,19 +5,19 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans
    http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
 
-    <bean id="componentOne" class="pl.pjatk.micwad.ComponentOne">
-        <constructor-arg index="0" ref="componentTwo"/>
-    </bean>
+<!--    <bean id="componentOne" class="pl.pjatk.micwad.ComponentOne">-->
+<!--        <constructor-arg index="0" ref="componentTwo"/>-->
+<!--    </bean>-->
 
-    <bean id="componentTwo" class="pl.pjatk.micwad.ComponentTwo">
-    </bean>
+<!--    <bean id="componentTwo" class="pl.pjatk.micwad.ComponentTwo">-->
+<!--    </bean>-->
 
-    <bean id="componentThree" class="pl.pjatk.micwad.ComponentThree">
-        <constructor-arg index="0" ref="componentOne"/>
-        <constructor-arg index="1" ref="componentTwo"/>
-        <constructor-arg index="2" ref="mySimpleClass"/>
-        <constructor-arg index="3" ref="mySecondSimpleClass"/>
-    </bean>
+<!--    <bean id="componentThree" class="pl.pjatk.micwad.ComponentThree">-->
+<!--        <constructor-arg index="0" ref="componentOne"/>-->
+<!--        <constructor-arg index="1" ref="componentTwo"/>-->
+<!--        <constructor-arg index="2" ref="mySimpleClass"/>-->
+<!--        <constructor-arg index="3" ref="mySecondSimpleClass"/>-->
+<!--    </bean>-->
 
     <!--BEANS TO MY_SIMPLE_CLASS WITHOUT USING COMPONENT_CONFIG CLASS USING STRING ARG FROM CONSTRUCTOR DIRECTLY HERE AS VALUE-->
     <!--    <bean id="mySimpleClass" class="pl.pjatk.micwad.MySimpleClass" >-->
@@ -28,15 +28,15 @@
     <!--    </bean>-->
 
     <!--BEANS FOR COMPONENT_CONFIG WITHOUT USING CONFIGURATION ANNOTATION AND POINTING INTO METHODS-->
-    <bean id="componentConfig"
-          class="pl.pjatk.micwad.ComponentConfig">
-    </bean>
-    <bean id="mySimpleClass"
-          factory-bean="componentConfig"
-          factory-method="mySimpleClass">
-    </bean>
-    <bean id="mySecondSimpleClass"
-          factory-bean="componentConfig"
-          factory-method="mySecondSimpleClass">
-    </bean>
+<!--    <bean id="componentConfig"-->
+<!--          class="pl.pjatk.micwad.ComponentConfig">-->
+<!--    </bean>-->
+<!--    <bean id="mySimpleClass"-->
+<!--          factory-bean="componentConfig"-->
+<!--          factory-method="mySimpleClass">-->
+<!--    </bean>-->
+<!--    <bean id="mySecondSimpleClass"-->
+<!--          factory-bean="componentConfig"-->
+<!--          factory-method="mySecondSimpleClass">-->
+<!--    </bean>-->
 </beans>

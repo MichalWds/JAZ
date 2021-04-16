@@ -1,0 +1,13 @@
+{
+  "properties": [
+    {
+      "name": "my.custom.property",
+      "type": "java.lang.String",
+      "description": "Description for my.custom.property."
+    },
+    {
+      "name": "my.custom.property",
+      "type": "java.lang.String",
+      "description": "Description for my.custom.property."
+    }
+  ] }

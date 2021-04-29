@@ -4,7 +4,6 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.context.annotation.Bean;
 import org.springframework.stereotype.Component;
-import org.w3c.dom.ls.LSOutput;
 
 @Component
 public class ComponentTwo {
@@ -15,7 +14,6 @@ public class ComponentTwo {
         System.out.println(valueFromProperties);
         System.out.println(randomValue);
         System.out.println("----------------");
-      //  System.out.println(someHomeworkValue);
         System.out.println("----------------");
     }
 

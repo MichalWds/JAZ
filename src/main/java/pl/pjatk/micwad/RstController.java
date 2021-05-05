@@ -30,7 +30,7 @@ public class RstController {
     }
 
     @PostMapping
-    public ResponseEntity<String> postMapping(){
-
+    public ResponseEntity<Car> createCar(@RequestBody Car car){
+        return ResponseEntity.ok(car);
     }
 }
